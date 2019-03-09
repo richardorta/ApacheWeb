@@ -4,7 +4,7 @@ pipeline {
     }
 
     environment {
-        JAVA_HOME = tool('java')
+        // JAVA_HOME = tool('java')
 
     }
 
