@@ -1,0 +1,8 @@
+pipeline {
+    agent {
+        label 'linux'
+    }
+
+
+
+}
