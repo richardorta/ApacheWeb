@@ -3,11 +3,6 @@ pipeline {
         label 'linux'
     }
 
-    environment {
-        // JAVA_HOME = tool('java')
-
-    }
-
     stages {
         stage('clean') {
             steps {
