@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('clean') {
             steps {
-                sh '$JAVA_HOME/bin/javac --version'
+                sh 'pwd'
             }
         }        
         
