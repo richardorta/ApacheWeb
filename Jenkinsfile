@@ -4,7 +4,7 @@ pipeline {
     }
 
     environment {
-        GRADLE_HOME = tool('gradle-4.6')
+        JAVA_HOME = tool('java')
 
     }
 
