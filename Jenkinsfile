@@ -2,11 +2,21 @@ pipeline {
     agent {
         label 'linux'
     }
+    
+    options {
+        disableConcurrentBuilds()
+    }
+
+    environment {
+        
+    }
+    
+    
 
     stages {
-        stage('clean') {
+        stage('build') {
             steps {
-                sh 'pwd'
+                sh 'docker pull fedora'
             }
         }        
         
