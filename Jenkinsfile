@@ -16,7 +16,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'docker pull fedora'
+                sh 'docker pull httpd'
             }
         }        
         
