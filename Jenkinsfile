@@ -25,7 +25,12 @@ pipeline {
                 sh 'docker pull httpd'
             }
         }        
-        
+         
+        stage('post-build') {
+            steps{
+                sh 'echo This is the post-stage section.'
+            }
+        }
     }
 
 }
