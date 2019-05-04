@@ -8,6 +8,7 @@ pipeline {
     }
 
     environment {
+        DESC="Add more details here."
         
     }
     
