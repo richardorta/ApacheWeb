@@ -14,6 +14,12 @@ pipeline {
     
 
     stages {
+        stage('prebuild') {
+            steps{
+                sh 'env'
+            }
+        }
+        
         stage('build') {
             steps {
                 sh 'docker pull httpd'
