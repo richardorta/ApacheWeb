@@ -8,7 +8,8 @@ pipeline {
     }
 
     environment {
-        DESC="A place for additional information."  
+        DESC="Add more details here."
+        
     }
 
     stages {
