@@ -2,7 +2,7 @@ pipeline {
     agent {
         label 'linux'
     }
-    
+
     options {
         disableConcurrentBuilds()
     }
@@ -11,8 +11,6 @@ pipeline {
         DESC="Add more details here."
         
     }
-    
-    
 
     stages {
         stage('prebuild') {
@@ -20,13 +18,12 @@ pipeline {
                 sh 'env'
             }
         }
-        
-        stage('build') {
+
+      stage('build') {
             steps {
                 sh 'docker pull httpd'
             }
-        }        
-         
+
         stage('post-build') {
             steps{
                 sh 'echo This is the post-stage section.'
